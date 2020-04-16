@@ -1,0 +1,25 @@
+{
+    "name": "eggs4ro",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "nuxt": "^2.0.0"
+    },
+    "devDependencies": {
+        "@nuxtjs/google-analytics": "^2.2.3",
+        "@nuxtjs/tailwindcss": "^1.4.0",
+        "@openfonts/titillium-web_latin-ext": "^1.44.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "nuxt-i18n": "^6.9.1",
+        "postcss-nested": "^4.2.1",
+        "prettier": "^1.19.1",
+        "svg-inline-loader": "^0.8.2"
+    }
+}

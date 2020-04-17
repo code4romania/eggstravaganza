@@ -29,6 +29,7 @@ module.exports = {
     knockEgg: 'Ciocnește!',
     tryAgain: 'Încearcă din nou',
 
+    noscript: 'Această secțiune nu poate funcționa fără JavaScript',
     shareOn: 'Distribuie',
     footer: {
         copy: '&copy; {year} Code for Romania.',

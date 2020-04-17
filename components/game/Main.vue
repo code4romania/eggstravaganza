@@ -4,17 +4,23 @@
         <p v-for="(line, index) in $t('description')" :class="index > 0 ? 'mt-6' : ''" :key="index" v-text="line" />
 
         <div class="flex flex-col flex-1 mt-12">
-            <div class="flex flex-col mb-5 md:flex-row md:justify-between">
-                <base-share />
-                <game-score />
-            </div>
+            <client-only>
+                <div class="flex flex-col mb-5 md:flex-row md:justify-between">
+                    <base-share />
+                    <game-score />
+                </div>
+            </client-only>
             <div
-                class="relative flex flex-col items-center flex-1 w-full p-4 overflow-hidden bg-gray-100 border rounded-lg shadow-md"
+                class="relative flex flex-col items-center justify-center flex-1 w-full p-4 overflow-hidden bg-gray-100 border rounded-lg shadow-md"
             >
-                <game-progress-tracker :steps="[]" />
-                <transition-fade>
-                    <component :is="currentScreenComponent" />
-                </transition-fade>
+                <client-only>
+                    <game-progress-tracker :steps="[]" />
+                    <transition-fade>
+                        <component :is="currentScreenComponent" />
+                    </transition-fade>
+                </client-only>
+
+                <noscript class="px-4 py-32 text-center lg:py-48" v-text="$t('noscript')" />
             </div>
         </div>
 

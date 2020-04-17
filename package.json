@@ -1,5 +1,5 @@
 {
-    "name": "eggs4ro",
+    "name": "eggstravaganza",
     "version": "1.0.0",
     "private": true,
     "scripts": {
@@ -20,6 +20,7 @@
         "nuxt-i18n": "^6.9.1",
         "postcss-nested": "^4.2.1",
         "prettier": "^1.19.1",
-        "svg-inline-loader": "^0.8.2"
+        "svg-inline-loader": "^0.8.2",
+        "vuex-persist": "^2.2.0"
     }
 }

@@ -17,16 +17,20 @@
                 open: false,
                 items: [
                     {
-                        url: '/',
-                        title: 'Link 1',
+                        url: 'https://rohelp.ro/ro/',
+                        title: 'RoHelp',
                     },
                     {
-                        url: '/',
-                        title: 'Link 2',
+                        url: 'https://cetrebuiesafac.ro/adaptare-si-rezistenta',
+                        title: 'CeTrebuieSăFac',
                     },
                     {
-                        url: '/',
-                        title: 'Link 3',
+                        url: 'https://code4.ro/ro/doneaza/',
+                        title: 'Donează',
+                    },
+                    {
+                        url: 'https://eepurl.com/glIHNP',
+                        title: 'Newsletter',
                     },
                 ],
             };

@@ -29,19 +29,44 @@
             return {
                 menus: [
                     {
-                        name: 'A',
+                        name: 'Ecosistem CoVid-19',
                         items: [
                             {
-                                url: '/',
-                                title: 'Link 1',
+                                url: 'https://cetrebuiesafac.ro/adaptare-si-rezistenta',
+                                title: 'CeTrebuieSaFac',
                             },
                             {
-                                url: '/',
-                                title: 'Link 2',
+                                url: 'https://rohelp.ro/ro/',
+                                title: 'RoHelp',
                             },
                             {
-                                url: '/',
-                                title: 'Link 3',
+                                url: 'https://datelazi.ro/',
+                                title: 'Date la Zi',
+                            },
+                            {
+                                url: 'https://diasporahub.ro/',
+                                title: 'Diaspora Hub',
+                            },
+                        ],
+                    },
+                    {
+                        name: 'Linkuri utile',
+                        items: [
+                            {
+                                url: 'https://code4.ro/ro/',
+                                title: 'Code for Romania',
+                            },
+                            {
+                                url: 'https://eepurl.com/glIHNP ',
+                                title: 'Abonează-te la newsletter',
+                            },
+                            {
+                                url: 'https://code4.ro/ro/codul-de-conduita/',
+                                title: 'Codul de conduită',
+                            },
+                            {
+                                url: 'https://code4.ro/ro/doneaza/',
+                                title: 'Donează',
                             },
                         ],
                     },
@@ -50,3 +75,14 @@
         },
     };
 </script>
+
+
+
+
+
+
+
+
+
+
+

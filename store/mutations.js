@@ -8,7 +8,7 @@ export default {
     modal: (state, open) => (state.modal = open),
 
     playerColor: (state, color) => (state.player.color = color),
-    opponentName: (state, opponent) => (state.opponent.name = opponent),
+    opponentObject: (state, opponent) => (state.opponent.object = opponent),
     opponentColor: state => {
         let colors = state.colors.filter(color => color !== state.player.color);
 

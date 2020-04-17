@@ -10,7 +10,7 @@
             return meta({
                 titleTemplate: null,
                 title: this.$t('title'),
-                description: this.$t('description'),
+                description: this.$t('description')[0],
             });
         },
     };

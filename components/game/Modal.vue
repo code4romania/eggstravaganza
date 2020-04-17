@@ -19,6 +19,8 @@
             <div class="flex justify-center w-full mt-5 rounded-md">
                 <base-button @click="reset" :label="$t('tryAgain')" primary />
             </div>
+
+            <base-share />
         </div>
     </div>
 </template>

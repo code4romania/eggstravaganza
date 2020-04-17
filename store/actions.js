@@ -1,6 +1,6 @@
 export default {
     setOpponent: ({ commit }, opponent) => {
-        commit('opponentName', opponent);
+        commit('opponentObject', opponent);
         commit('step', 'choose-egg');
     },
     setColors: ({ commit }, playerColor) => {

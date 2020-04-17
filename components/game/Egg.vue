@@ -1,5 +1,5 @@
 <template>
-    <div class="relative">
+    <div class="relative flex items-center" :class="flexDirection">
         <svg viewBox="0 0 76 100" class="ease-in-out-quint" :class="eggnimation">
             <defs>
                 <linearGradient gradientUnits="userSpaceOnUse" :id="instanceGradientName">
@@ -20,7 +20,7 @@
             </g>
         </svg>
 
-        <game-avatar v-if="avatar" class="w-10 h-10" :person="avatar" :interactive="false" />
+        <game-avatar v-if="person" class="w-10 h-10 my-4" :person="person" :interactive="false" />
     </div>
 </template>
 
@@ -41,8 +41,8 @@
                 type: String,
                 required: true,
             },
-            avatar: {
-                type: String,
+            person: {
+                type: Object,
                 required: false,
             },
         },
@@ -84,6 +84,9 @@
                 ];
 
                 return patterns[math.randomInt(0, patterns.length)];
+            },
+            flexDirection() {
+                return this.inverted ? 'flex-col-reverse' : 'flex-col';
             },
         },
     };

@@ -5,7 +5,7 @@
                 :color="$store.state.player.color"
                 :class="eggClass"
                 :cracked="opponentHasWon"
-                :avatar="null"
+                :person="$store.state.player"
                 inverted
             />
 
@@ -13,7 +13,7 @@
                 :color="$store.state.opponent.color"
                 :class="eggClass"
                 :cracked="playerHasWon"
-                :avatar="$store.state.opponent.name"
+                :person="$store.state.opponent.object"
             />
         </div>
 

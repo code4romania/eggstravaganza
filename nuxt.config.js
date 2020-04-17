@@ -24,7 +24,10 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [{ src: '~plugins/ssr-components.js' }],
+    plugins: [
+        { src: '~plugins/ssr-components.js', ssr: true },
+        { src: '~plugins/vuex-persist', ssr: false },
+    ],
     /*
      ** Nuxt.js dev-modules
      */

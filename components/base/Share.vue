@@ -19,14 +19,14 @@
                     id: 'facebook',
                     uri: 'https://www.facebook.com/sharer/sharer.php?u=',
                 },
-                {
-                    id: 'twitter',
-                    uri: 'https://twitter.com/intent/tweet?url=',
-                },
-                {
-                    id: 'linkedin',
-                    uri: 'http://www.linkedin.com/shareArticle?mini=true&url=',
-                },
+                // {
+                //     id: 'twitter',
+                //     uri: 'https://twitter.com/intent/tweet?url=',
+                // },
+                // {
+                //     id: 'linkedin',
+                //     uri: 'http://www.linkedin.com/shareArticle?mini=true&url=',
+                // },
             ],
         },
         methods: {

@@ -29,7 +29,15 @@
                     return ['hover:underline'];
                 }
 
-                return ['py-1', 'lg:px-3', 'hover:bg-gray-100'];
+                let cls = ['py-1', 'lg:px-3', 'lg:ml-4', 'rounded'];
+
+                if (typeof this.item.color === 'undefined' || this.item.color !== 'green') {
+                    cls.push('hover:bg-gray-200', 'focus:bg-gray-200');
+                } else {
+                    cls.push('text-white', 'bg-green-400', 'hover:bg-green-500', 'focus:bg-green-500');
+                }
+
+                return cls;
             },
         },
     };

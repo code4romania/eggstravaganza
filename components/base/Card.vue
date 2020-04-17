@@ -5,7 +5,7 @@
                 class="flex-shrink-0 w-12 h-12 p-3 text-blue-500 bg-blue-100 rounded-md"
                 v-html="require(`!svg-inline-loader!~/assets/svg/icons/${this.icon}.svg`)"
             />
-            <h1 class="flex-1 ml-5 text-base" v-text="title" />
+            <h1 class="flex-1 ml-5 lg:text-base" v-text="title" />
         </div>
 
         <a

@@ -25,12 +25,13 @@
                         title: 'Ce trebuie să fac',
                     },
                     {
-                        url: 'https://code4.ro/ro/doneaza/',
-                        title: 'Donează',
-                    },
-                    {
                         url: 'https://eepurl.com/glIHNP',
                         title: 'Newsletter',
+                    },
+                    {
+                        url: 'https://code4.ro/ro/doneaza/',
+                        title: 'Donează',
+                        color: 'green',
                     },
                 ],
             };

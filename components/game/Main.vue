@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="mb-4 text-xl font-normal leading-tight lg:text-3xl xl:text-4xl" v-text="$t('title')" />
+        <h1 class="mb-4 text-xl font-semibold leading-tight lg:text-3xl xl:text-4xl" v-text="$t('title')" />
         <p v-for="(line, index) in $t('description')" :class="index > 0 ? 'mt-6' : ''" :key="index" v-text="line" />
 
         <div class="flex flex-col flex-1 mt-12">
@@ -18,9 +18,9 @@
             </div>
         </div>
 
-        <section class="grid gap-10 my-10 lg:my-20 lg:grid-cols-3">
+        <section class="grid gap-10 mt-20 lg:grid-cols-3">
             <h1
-                class="text-lg font-normal leading-tight lg:text-xl xl:text-2xl lg:col-span-3"
+                class="text-lg font-semibold leading-tight lg:text-xl xl:text-2xl lg:col-span-3"
                 v-text="$t('subtitle')"
             />
 

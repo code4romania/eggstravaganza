@@ -1,8 +1,7 @@
 <template>
-    <div class="flex items-center flex-1 w-full max-w-2xl mx-auto">
+    <div class="flex items-center flex-1 w-full mx-auto sm:max-w-md lg:max-w-2xl">
         <div class="flex flex-wrap justify-center p-2 py-10">
             <game-avatar
-                class="w-16 h-16 lg:w-20 lg:h-20"
                 v-for="(opponent, index) in opponents"
                 @click="setOpponent(opponent)"
                 :person="opponent"

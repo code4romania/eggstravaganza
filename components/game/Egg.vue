@@ -20,7 +20,7 @@
             </g>
         </svg>
 
-        <game-avatar v-if="person" class="w-10 h-10 my-4" :person="person" :interactive="false" />
+        <game-avatar v-if="person" class="my-4" :person="person" :interactive="false" />
     </div>
 </template>
 

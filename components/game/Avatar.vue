@@ -1,18 +1,24 @@
 <template>
     <component
-        class="flex items-center my-1 text-gray-100 rounded-full"
+        class="relative flex items-center my-1 text-gray-100 rounded-full"
+        :title="person.name"
         :class="interactiveClasses"
         @click="clickHandler"
         :is="tagName"
     >
-        <img class="flex-shrink-0 overflow-hidden rounded-full" :src="avatar" :draggable="false" alt="" />
+        <img
+            class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-full lg:w-16 lg:h-16"
+            :src="avatar"
+            :draggable="false"
+            alt=""
+        />
 
         <div
-            class="px-2 py-1 ml-2 text-base leading-tight text-left text-black whitespace-no-wrap rounded"
+            class="px-2 py-1 ml-2 text-base leading-tight text-left text-black rounded sm:whitespace-no-wrap name"
             :class="nameClasses"
         >
             <span class="block font-semibold">{{ person.name }}</span>
-            <span class="block">{{ person.city }}</span>
+            <span class="block text-gray-700">{{ person.city }}</span>
         </div>
     </component>
 </template>
@@ -62,7 +68,7 @@
                     return false;
                 }
 
-                return ['hidden', 'bg-white', 'border', 'text-sm'];
+                return ['hidden', 'bg-white', 'border', 'text-sm', 'absolute', 'left-0', 'pointer-events-none'];
             },
         },
         methods: {
@@ -78,10 +84,16 @@
 </script>
 
 <style lang="postcss">
-    .tooltip:hover,
-    .tooltip:focus {
-        div {
-            display: block;
+    @screen md {
+        .tooltip:hover,
+        .tooltip:focus {
+            div {
+                display: block;
+            }
         }
+    }
+
+    .tooltip .name {
+        margin-left: 115%;
     }
 </style>

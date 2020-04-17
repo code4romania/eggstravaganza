@@ -25,7 +25,7 @@
         methods: {
             setOpponent(opponent) {
                 this.$store.dispatch('setOpponent', opponent);
-                // this.$ga.event('People', 'Choose', opponent);
+                this.$ga.event('People', 'Choose', opponent.name);
             },
         },
     };

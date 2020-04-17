@@ -22,7 +22,7 @@
                     },
                     {
                         url: 'https://cetrebuiesafac.ro/adaptare-si-rezistenta',
-                        title: 'CeTrebuieSăFac',
+                        title: 'Ce trebuie să fac',
                     },
                     {
                         url: 'https://code4.ro/ro/doneaza/',

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center">
         <span class="mr-3 text-base" v-text="$t('shareOn')" />
         <button
             @click="popup(platform.uri)"

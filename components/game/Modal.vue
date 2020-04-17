@@ -11,16 +11,16 @@
                 v-html="badgeIcon"
             />
             <div class="mt-3 text-center sm:mt-5">
-                <h3 class="text-lg font-medium leading-tight text-gray-900 md:text-xl" v-text="title" />
+                <h3 class="text-lg font-semibold leading-tight text-black md:text-xl" v-text="title" />
 
-                <p class="mt-2 text-sm leading-5 text-gray-500 sm:text-base" v-text="text" />
+                <p class="mt-2 text-sm leading-5 text-gray-800 sm:text-base" v-text="text" />
             </div>
 
             <div class="flex justify-center w-full mt-5 rounded-md">
                 <base-button @click="reset" :label="$t('tryAgain')" primary />
             </div>
 
-            <base-share />
+            <base-share class="justify-center mt-2" />
         </div>
     </div>
 </template>

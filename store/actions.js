@@ -10,7 +10,7 @@ export default {
     },
     braceForImpact: ({ commit, getters }) => {
         commit('impact', true);
-        commit('winner', 65);
+        commit('winner', 50);
 
         commit('increaseGameCount');
 

@@ -32,16 +32,16 @@
                         name: 'Ecosistem CoVid-19',
                         items: [
                             {
-                                url: 'https://cetrebuiesafac.ro/adaptare-si-rezistenta',
-                                title: 'CeTrebuieSaFac',
-                            },
-                            {
                                 url: 'https://rohelp.ro/ro/',
                                 title: 'RoHelp',
                             },
                             {
+                                url: 'https://cetrebuiesafac.ro/adaptare-si-rezistenta',
+                                title: 'Ce trebuie să fac',
+                            },
+                            {
                                 url: 'https://datelazi.ro/',
-                                title: 'Date la Zi',
+                                title: 'Date La Zi',
                             },
                             {
                                 url: 'https://diasporahub.ro/',

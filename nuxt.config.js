@@ -63,8 +63,7 @@ export default {
         },
     },
     googleAnalytics: {
-        id: process.env.ANALYTICS_ID,
-        dev: false,
+        id: process.env.ANALYTICS_ID || '',
     },
     /*
      ** Build configuration

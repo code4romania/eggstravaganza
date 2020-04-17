@@ -9,7 +9,7 @@
                 <game-score />
             </div>
             <div
-                class="relative flex flex-col items-center flex-1 w-full p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg"
+                class="relative flex flex-col items-center flex-1 w-full p-4 overflow-hidden bg-gray-100 border rounded-lg shadow-md"
             >
                 <game-progress-tracker :steps="[]" />
                 <transition-fade>
@@ -17,6 +17,34 @@
                 </transition-fade>
             </div>
         </div>
+
+        <section class="grid gap-10 my-10 lg:my-20 lg:grid-cols-3">
+            <h1
+                class="text-lg font-normal leading-tight lg:text-xl xl:text-2xl lg:col-span-3"
+                v-text="$t('subtitle')"
+            />
+
+            <base-card
+                title="Rămâi în continuare în siguranță în lupta cu epidemia de COVID-19"
+                url="https://cetrebuiesafac.ro/"
+                label="Ce trebuie să fac"
+                icon="info"
+            />
+
+            <base-card
+                title="Susține organizațiile implicate activ în lupta cu epidemia de COVID-19"
+                url="https://rohelp.ro/ro/"
+                label="RoHelp.ro"
+                icon="support"
+            />
+
+            <base-card
+                title="Îți place ce facem? Cumpără un “ou virtual” pentru Code for Romania"
+                url="https://code4.ro/ro/doneaza/"
+                label="Donează"
+                icon="donate"
+            />
+        </section>
     </div>
 </template>
 

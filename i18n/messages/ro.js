@@ -8,20 +8,14 @@ module.exports = {
     subtitle: 'Îți mulțumim că stai acasă și că ne ajuți pe toți să fim în siguranță!',
 
     state: {
-        won: {
-            title: 'Ai câștigat!',
-            text: 'Tradiția merge mai departe și anul acesta!',
-        },
-        lost: {
-            title: 'Ai pierdut!',
-            text: 'Mai încearcă o dată și tradiția va merge mai departe și anul acesta!',
-        },
+        won: 'Ai câștigat!',
+        lost: 'Ai pierdut!',
     },
 
     scores: `Ai câștigat <span class="px-2 text-xl font-semibold text-blue-500">{wins}</span> din <span class="px-2 text-xl font-semibold text-blue-500">{games}</span> încercări`,
 
     steps: {
-        'choose-opponent': 'Alege un adversar',
+        'choose-opponent': 'Alege un partener',
         'choose-egg': 'Alege un ou',
         play: 'Ciocnește',
     },

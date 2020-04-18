@@ -10,11 +10,11 @@
                 :class="badgeColor"
                 v-html="badgeIcon"
             />
-            <div class="mt-3 text-center sm:mt-5">
-                <h3 class="text-lg font-semibold leading-tight text-black md:text-xl" v-text="title" />
 
-                <p class="mt-2 text-sm leading-5 text-gray-800 sm:text-base" v-text="text" />
-            </div>
+            <p
+                class="mt-3 text-lg font-semibold leading-tight text-center text-black sm:mt-5 md:text-xl"
+                v-text="title"
+            />
 
             <div class="flex justify-center w-full mt-5 rounded-md">
                 <base-button @click="reset" :label="$t('tryAgain')" primary />
@@ -44,10 +44,7 @@
                 return require(`!svg-inline-loader!~/assets/svg/icons/${this.success ? 'smile' : 'frown'}.svg`);
             },
             title() {
-                return this.success ? this.$t('state.won.title') : this.$t('state.lost.title');
-            },
-            text() {
-                return this.success ? this.$t('state.won.text') : this.$t('state.lost.text');
+                return this.success ? this.$t('state.won') : this.$t('state.lost');
             },
         },
         methods: mapActions({

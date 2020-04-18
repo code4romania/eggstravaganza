@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="mb-4 text-xl font-semibold leading-tight lg:text-3xl xl:text-4xl" v-text="$t('title')" />
+        <h1 class="mb-4 text-xl font-semibold leading-tight lg:mb-8 lg:text-3xl xl:text-4xl" v-text="$t('title')" />
         <p v-for="(line, index) in $t('description')" :class="index > 0 ? 'mt-6' : ''" :key="index" v-text="line" />
 
         <div class="flex flex-col flex-1 mt-12">

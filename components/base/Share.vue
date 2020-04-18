@@ -5,7 +5,7 @@
             @click="popup(platform.uri)"
             v-for="platform in platforms"
             :key="platform.id"
-            class="w-6 h-6 mx-1 my-2 rounded-full md:w-8 md:h-8 hover:opacity-75 focus:outline-none focus:shadow-outline"
+            class="w-6 h-6 mx-1 rounded-full md:w-8 md:h-8 hover:opacity-75 focus:outline-none focus:shadow-outline"
             v-html="require(`!svg-inline-loader!~/assets/svg/icons/${platform.id}.svg`)"
         />
     </div>

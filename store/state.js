@@ -1,6 +1,5 @@
 export default () => ({
     opponents: [
-        //
         { id: 'adelinanicolov', name: 'Adelina Nicolov', city: 'București' },
         { id: 'adrianaspulber', name: 'Adriana Spulber', city: 'București' },
         { id: 'alingabrielzainescu', name: 'Alin Gabriel Zăinescu', city: 'New York' },
@@ -17,11 +16,12 @@ export default () => ({
         { id: 'cristinakoncsag', name: 'Cristina Koncsag', city: 'Cluj' },
         { id: 'danapascu', name: 'Dana Pascu', city: 'București' },
         { id: 'davidmorar', name: 'David Morar', city: 'Washington, D.C.' },
+        { id: 'dragoscostache', name: 'Dragoș C. Costache', city: 'București' },
         { id: 'elizacosman', name: 'Eliza Cosman', city: 'București' },
         { id: 'gheorghelupu', name: 'Gheorghe Lupu', city: 'Iași' },
         { id: 'inadumitriu', name: 'Ina Dumitriu', city: 'București' },
         { id: 'irinaborozan', name: 'Irina Borozan', city: 'București' },
-        { id: 'mihaidobos', name: 'Mihai Dobos', city: 'Londra' },
+        { id: 'mihaidobos', name: 'Mihai Doboș', city: 'Londra' },
         { id: 'oanadespan', name: 'Oana Despan', city: 'București' },
         { id: 'oliviavereha', name: 'Olivia Vereha', city: 'București' },
         { id: 'radusofrone', name: 'Radu Sofrone', city: 'București' },

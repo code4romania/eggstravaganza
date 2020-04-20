@@ -9,9 +9,13 @@
 </template>
 
 <script>
-    // require('typeface-titillium-web');
-    export default {};
+    export default {
+        head() {
+            return {
+                htmlAttrs: {
+                    lang: this.$i18n.locale,
+                },
+            };
+        },
+    };
 </script>
-
-<style>
-</style>
